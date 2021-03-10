@@ -1,0 +1,14 @@
+{
+  "name": "grot",
+  "version": "1.0.0",
+  "description": "why no work",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron ."
+  },
+  "author": "Val",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^12.0.0"
+  }
+}
