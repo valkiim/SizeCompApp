@@ -14,6 +14,5 @@ class figureine {
         this.figname = name;
         this.pxtometers = (this.imgceiling-this.imgfloor)/(this.figheight);
             // use the number of pix between floor and ceiling to figure PX per meter
-    }
-    
+    }   
 }
