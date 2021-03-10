@@ -4,6 +4,7 @@ class figureine {
     imgceiling: number;     // Similarly, how many PX from the bottom of the image the measured point is, often top of head
     figheight:  number;     // the real-world, meters measure from figureine's floor to ceiling
     figname:    string;     // the figureine's name. handy!
+    figpx:      number;     // floor to ceiling px of the figure
     pxtometers: number;     // the number of pixels that correspond to a meter for an image. 
 
     constructor(src: string, floor: number, ceiling: number, height: number, name: string){
@@ -12,7 +13,8 @@ class figureine {
         this.imgceiling = ceiling;
         this.figheight = height;
         this.figname = name;
-        this.pxtometers = (this.imgceiling-this.imgfloor)/(this.figheight);
+        this.figpx = (this.imgceiling-this.imgfloor);
+        this.pxtometers = (this.figpx/this.figheight);
             // use the number of pix between floor and ceiling to figure PX per meter
     }   
 }
