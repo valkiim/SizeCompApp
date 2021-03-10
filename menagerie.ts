@@ -40,6 +40,7 @@ class menagerie{
             let newFigIndex = this.figures.length-1;
             this.tallestFig = newFigIndex;
             this.tallestHeight = newFig.figheight;
+            this.calcScaling();
         }
     }
     findTallest(){
@@ -52,6 +53,7 @@ class menagerie{
                     this.tallestFig = i;
                 }
             }
+            this.calcScaling();
         }
     }
     calcScaling(){
